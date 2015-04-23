@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/***
+ * prettify.css
+ **
+ * 
+ *  Shows ALL Line Numbers 
+ * 
+ */
+
+.prettyprint ol.linenums > li { list-style-type: decimal;}
+
+
+
+
+

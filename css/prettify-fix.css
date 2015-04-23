@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/***
+ * prettify.css LINE NUMBERS WITHOUT PERIOD.
+ **
+ * Line Numbers look like 1 instead of 1.
+ *
+ */
+
+ol.linenums{
+    counter-reset:linenumber;
+}
+ol.linenums li{
+    list-style-type:none;
+    counter-increment:linenumber;
+}
+ol.linenums li:before{
+    content: counter(linenumber);
+    float:left;
+    margin-left:-4em;
+    text-align:right;
+    width:3em;
+}
+
+/***
+ * prettify.css LINE NUMBERS WITH PERIOD.
+ **
+ * 
+ * Line Numbers look like 1. instead of 1
+ * 
+ */
+
+.prettyprint ol.linenums > li { list-style-type: decimal;}
